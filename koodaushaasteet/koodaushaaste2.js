@@ -1,3 +1,4 @@
+
 ﻿function etsiArmstronginLuvut() {
     for (let luku = 100; luku <= 999; luku++) {
         var lukuTaulukko = luku.toString().split('');
@@ -62,3 +63,4 @@ for (let luku = 1; luku <= 100; luku++) {
         console.log(luku);
     }
 }
+

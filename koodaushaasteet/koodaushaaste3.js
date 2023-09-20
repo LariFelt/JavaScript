@@ -1,3 +1,4 @@
+
 ﻿
 function onkoEkaIso(merkkijono) {
     if (merkkijono[0] === merkkijono[0].toUpperCase()) {
@@ -67,4 +68,4 @@ function onkoHTMLTageja(htmlmerkkijono) {
 }
 
 var teksti5 = "<p>Tämä on <strong>HTML</strong></p>";
-console.log(onkoHTMLTageja(teksti5)); 
+﻿
