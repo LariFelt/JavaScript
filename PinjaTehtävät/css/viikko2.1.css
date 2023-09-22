@@ -1,26 +1,35 @@
 
 #ekaart {
-    background-color:orangered;
-    max-width:30%;
-    padding:10px
+    background-color: orangered;
+    max-width: 30%;
+    padding: 10px;
+    margin: 20px;
 }
+
 #tokaart {
     background-color: cornflowerblue;
     max-width: 30%;
-    padding: 10px
+    padding: 10px;
+    margin: 20px;
 }
+
 #kolmasart {
     background-color: yellowgreen;
     max-width: 30%;
-    padding: 10px
+    padding: 10px;
+    margin: 20px;
 }
+
 #neljasart {
     background-color: lightslategrey;
     max-width: 30%;
-    padding: 10px
+    padding: 10px;
+    margin: 20px;
 }
+
 #viidesart {
     background-color: navajowhite;
     max-width: 30%;
-    padding: 10px
+    padding: 10px;
+    margin: 20px;
 }

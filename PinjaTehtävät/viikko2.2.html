@@ -3,21 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="viikko2.2.css">
-    <script src="viikko2.2.js"></script>
+    <link rel="stylesheet" href="css/viikko2.1.css">
+    <script src="js/viikko2.2.js"></script>
     <title>viikko 2 tokat</title>
 </head>
 <body>
     <article id=ekaart>
         <h1>Positiivinen vai negatiivinen</h1>
-        <p>Anna luku: <input type="text" id="luku" value=""></p>
+        <p>Anna luku: <input type="text" id="luku" placeholder="Esim. 512"></p>
         <button type="button" name="button" onclick="PosiNega()">Tarkista</button>
     </article>
 
     <article id=tokaart>
         <h1>Viikonpäivä</h1>
-        <p>Anna viikonpäivän numero: <input type="text" id="numero" value=""></p>
-        <button type="button" name="button" onclick="viikonPaiva()">Tarkista</button>
+        <p>Anna viikonpäivän numero: <input type="text" id="numero" placeholder="Esim. 6"></p>
+        <button type="button" name="button" onclick="ViikonPaiva()">Tarkista</button>
+    </article>
+
+    <article id=kolmasart>
+        <h1>Oliko vuosi karkausvuosi?</h1>
+        <p>Syötä vuosiluku ja tarkista, onko se karkausvuosi.</p>
+        <label for="vuosi">Syötä vuosiluku:</label>
+        <input type="text" id="vuosi" placeholder="Esim. 2023">
+        <button type="button" onclick="VuosiLuku()">Tarkista</button>
+    </article>
+
+    <article id="neljasart">
+        <h1>Lukujen summa ja keskiarvo</h1>
+        <p>Syötä viisi lukua:</p>
+        <input type="number" id="luku1" placeholder="Luku 1">
+        <input type="number" id="luku2" placeholder="Luku 2">
+        <input type="number" id="luku3" placeholder="Luku 3">
+        <input type="number" id="luku4" placeholder="Luku 4">
+        <input type="number" id="luku5" placeholder="Luku 5">
+
+        <button type="button" onclick="laskeSummaJaKeskiarvo()">Laske</button>
+
+        <p id="tulos"></p>
+    </article>
+
+    <article id="viidesart">
+        <h1>Kertotaulu</h1>
+        <p>Syötä luku:</p>
+        <input type="number" id="numero2" placeholder="Syötä luku">
+        <button type="button" onclick="laskeKertotaulu()">Laske</button>
+        <p id="vastaus"></p>
     </article>
 </body>
 </html>
