@@ -6,6 +6,7 @@
     margin: 20px;
 }
 
+
 #tokaart {
     background-color: cornflowerblue;
     max-width: 30%;
@@ -32,4 +33,17 @@
     max-width: 30%;
     padding: 10px;
     margin: 20px;
+}
+
+#kuudesart {
+    background-color: skyblue;
+    max-width: 30%;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+button {
+    margin-bottom:10px;
+
 }
