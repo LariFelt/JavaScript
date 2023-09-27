@@ -1,49 +1,78 @@
 
 #ekaart {
     background-color: orangered;
-    max-width: 30%;
+    width: 500px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 
 #tokaart {
     background-color: cornflowerblue;
-    max-width: 30%;
+    width: 500px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 #kolmasart {
     background-color: yellowgreen;
-    max-width: 30%;
+    width: 500px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 #neljasart {
     background-color: lightslategrey;
-    max-width: 30%;
+    width: 500px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 #viidesart {
     background-color: navajowhite;
-    max-width: 30%;
+    width: 500px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 #kuudesart {
     background-color: skyblue;
-    max-width: 30%;
+    width: 500px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+#seiskaart {
+    background-color: yellow;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+#kasiart {
+    background-color: palevioletred;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 10px;
+    float: left;
 }
 
 
 button {
     margin-bottom:10px;
-
 }
