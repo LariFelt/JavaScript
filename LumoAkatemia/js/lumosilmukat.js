@@ -216,3 +216,4 @@ function poistaPilkut(merkkijono) {
 
 const syote = '7,3,9,2,44,99,123';
 console.log(poistaPilkut(syote));
+

@@ -239,4 +239,3 @@ console.log(tarkistaSamuus(10, 10));
 console.log(tarkistaAaanestysika(20));
 console.log(tulostaKuukaudenPaivat(2));
 console.log(muunnaRahaksi(1295));
-
