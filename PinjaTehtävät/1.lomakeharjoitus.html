@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/1.lomakeharjoitus.css">
+    <script src="js/1.lomakeharjoitus.js"></script>
+    <title>1.lomakeharjoitus</title>
+</head>
+<body>
+    <form class="ekalomake">
+
+        <label for="etunimi">Etunimi: </label>
+        <input type="text" id="etunimi" placeholder="Anna etunimesi"><br />
+        <label for="sukunimi">Sukunimi:</label>
+        <input type="text" id="sukunimi" placeholder="Anna sukunimesi"><br />
+
+        <label for="kulku">Tulin tänään kouluun: </label><br />
+        <input type="radio" id="Jalka" name="kulkupeli">
+        <label for="Jalat">Jalan</label><br />
+        <input type="radio" id="Auto" name="kulkupeli">
+        <label for="Auto">Autolla</label><br />
+        <input type="radio" id="Juna" name="kulkupeli">
+        <label for="Juna">Junalla</label><br />
+        <input type="radio" id="Bussi" name="kulkupeli">
+        <label for="Bussi">Bussilla</label><br />
+        <input type="radio" id="Mopo" name="kulkupeli">
+        <label for="Mopo">Mopolla</label><br />
+        <input type="radio" id="Uiden" name="kulkupeli">
+        <label for="Uiden">Uiden</label><br />
+
+        <select id="lempitunti">
+            <option value=""></option>
+            <option value="YTO">YTO-aineet</option>
+            <option value="Ohjelmointi">Ohjelmointi</option>
+            <option value="Liikunta">Liikunta</option>
+            <option value="Ruoka">Ruokatunti</option>
+        </select><br />
+
+        <button type="button" name="button" onclick="tarkistus()">Lähetä</button>
+
+    </form>
+    
+
+</body>
+</html>
