@@ -24,4 +24,5 @@
         alert("Valitse lempituntisi");
     return;
     }
+        alert("Kiitos tiedoista!");
 }
