@@ -139,6 +139,79 @@ function laskePotenssi() {
         tuloksetElementti.textContent = "Anna kelvolliset luvut.";
     }
 }
+function laskeSuurinPienin() {
+    var luku1 = parseFloat(document.getElementById("luku1").value);
+    var luku2 = parseFloat(document.getElementById("luku2").value);
+    var luku3 = parseFloat(document.getElementById("luku3").value);
+    var luku4 = parseFloat(document.getElementById("luku4").value);
+    var luku5 = parseFloat(document.getElementById("luku5").value);
+
+    var luvut = [luku1, luku2, luku3, luku4, luku5];
+    var suurin = Math.max(...luvut);
+    var pienin = Math.min(...luvut);
+
+    var tulos = "Suurin luku: " + suurin + "<br>Pienin luku: " + pienin;
+    document.getElementById("tulos").innerHTML = tulos;
+}
+
+function muunnaSalasana() {
+    var syoteElementti = document.getElementById("passwordInput");
+    var syote = syoteElementti.value;
+
+    var uusiSalasanaElementti = document.getElementById("uusiSalasana");
+
+    if (syote) {
+        var muunnettuSalasana = "";
+        for (var i = 0; i < syote.length; i++) {
+            var satunnainenKirjain = arvoSatunnainenKirjain();
+            muunnettuSalasana += syote[i];
+            muunnettuSalasana += satunnainenKirjain;
+        }
+        uusiSalasanaElementti.textContent = "Salasana: " + muunnettuSalasana;
+    } else {
+        uusiSalasanaElementti.textContent = "Syötä sana ensin.";
+    }
+}
+
+function arvoSatunnainenKirjain() {
+    var kirjaimet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var satunnainenIndeksi = Math.floor(Math.random() * kirjaimet.length);
+    return kirjaimet.charAt(satunnainenIndeksi);
+}
+
+function naytaParillisetJaParittomat() {
+    var pienempiElementti = document.getElementById("pienempiNumero");
+    var isompiElementti = document.getElementById("isompiNumero");
+
+    var pienempi = parseFloat(pienempiElementti.value);
+    var isompi = parseFloat(isompiElementti.value);
+
+    var parilliset = [];
+    var parittomat = [];
+    var parillistenSumma = 0;
+    var parittomienSumma = 0;
+
+    for (var i = pienempi; i <= isompi; i++) {
+        if (i % 2 === 0) {
+            parilliset.push(i);
+            parillistenSumma += i;
+        } else {
+            parittomat.push(i);
+            parittomienSumma += i;
+        }
+    }
+
+    var parillisetNumerotElementti = document.getElementById("parillisetNumerot");
+    var parittomatNumerotElementti = document.getElementById("parittomatNumerot");
+    var parillistenSummaElementti = document.getElementById("parillistenSumma");
+    var parittomienSummaElementti = document.getElementById("parittomienSumma");
+
+    parillisetNumerotElementti.textContent = "Parilliset numerot: " + parilliset.join(", ");
+    parittomatNumerotElementti.textContent = "Parittomat numerot: " + parittomat.join(", ");
+    parillistenSummaElementti.textContent = "Parillisten numeroiden summa: " + parillistenSumma;
+    parittomienSummaElementti.textContent = "Parittomien numeroiden summa: " + parittomienSumma;
+}
+
 
 
 

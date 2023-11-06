@@ -74,5 +74,47 @@
         <button type="button" id="potenssiButton" onclick="laskePotenssi()">Laske</button>
         <div id="potenssiTulokset"></div>
     </article>
+
+    <article id="tokaart">
+        <h1>Suurin ja pienin luku</h1>
+        <form id="lukulomake">
+            <label for="luku1">Anna 1. luku:</label>
+            <input type="number" id="luku1" name="luku1" required><br>
+
+            <label for="luku2">Anna 2. luku:</label>
+            <input type="number" id="luku2" name="luku2" required><br>
+
+            <label for="luku3">Anna 3. luku:</label>
+            <input type="number" id="luku3" name="luku3" required><br>
+
+            <label for "luku4">Anna 4. luku:</label>
+            <input type="number" id="luku4" name="luku4" required><br>
+
+            <label for="luku5">Anna 5. luku:</label>
+            <input type="number" id="luku5" name="luku5" required><br>
+
+            <input type="button" value="Laske" onclick="laskeSuurinPienin()">
+        </form>
+
+        <p id="tulos"></p>
+    </article>
+
+    <article id="viidesart">
+        <h1>Tehtävä 10</h1>
+        <p>Anna salasana: <input type="text" id="passwordInput" value=""></p>
+        <button type="button" id="muunnaButton" onclick="muunnaSalasana()">Muuta salasanaksi</button>
+        <div id="uusiSalasana"></div>
+    </article>
+
+    <article id="kolmasart">
+        <h1>Tehtävä 11</h1>
+        <p>Anna pienempi numero: <input type="number" id="pienempiNumero" value=""></p>
+        <p>Anna isompi numero: <input type="number" id="isompiNumero" value=""></p>
+        <button type="button" id="naytaButton" onclick="naytaParillisetJaParittomat()">Näytä numerot ja summat</button>
+        <div id="parillisetNumerot"></div>
+        <div id="parittomatNumerot"></div>
+        <div id="parillistenSumma"></div>
+        <div id="parittomienSumma"></div>
+    </article>
 </body>
 </html>
